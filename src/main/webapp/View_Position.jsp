@@ -13,7 +13,7 @@
     </head>
     <body>
         <h1>Tracking Coords</h1>
-        <%@page import="java.util.*;"%>
+        <%@page import="java.util.*"%>
         <%@page import="java.io.*"%>
         
         <%
