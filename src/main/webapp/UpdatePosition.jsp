@@ -18,8 +18,8 @@
         <%@page import="java.io.File"%>
         <%@page import="java.io.IOException"%>
         <%@page import="java.io.PrintWriter"%>
-        <%@page import="java.io.FileWriter;"%>
-        <%@page import="java.util.*;"%>
+        <%@page import="java.io.FileWriter"%>
+        <%@page import="java.util.*"%>
         
         <% 
             File coordsFile=new File("./coords.txt");
