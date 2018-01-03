@@ -32,7 +32,12 @@
             while(in.hasNextLine())
             {
                 out.print("<br>+ ");
-                out.print(""+in.nextLine()+"<br>");
+                String data=in.nextLine();
+                String ind=data.substring(data.indexOf(" ",data.length()));
+                String latt=ind.substring(0,ind.indexOf(" "));
+                String logt=ind.substring(ind.indexOf(" ")+1,ind.length());
+            
+                out.print("<a href=\"Track.jsp?latt="+latt+"&logt="+logt+"\">"+data+"<br>");
             }
             in.close();
             out.print("<br>---------------------------");
