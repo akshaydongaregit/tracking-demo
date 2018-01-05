@@ -1,5 +1,6 @@
 <html>
-<head>Sql Test
+<head>
+  <title>Sql Test</title>
 </head>
 <body>
   <%@page import="java.sql.*" %>
