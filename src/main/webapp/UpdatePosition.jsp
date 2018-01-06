@@ -54,9 +54,10 @@
             {
                 java.text.SimpleDateFormat dformat=new SimpleDateFormat("YYYY-MM-DD hh:mm:ss.SS");
                 String sdate=dformat.format(new java.util.Date());
+                String eid="1";
                 
                 st=cn.createStatement();
-                String sql="insert into locations_info(emp_id,name,latt,logt,utime) values('"+name+"','"+latt+"','"+logt+"','"+sdate+"')";
+                String sql="insert into locations_info(emp_id,name,latt,logt,utime) values("'"+eid+"','"+'"+name+"','"+latt+"','"+logt+"','"+sdate+"')";
                 st.execute(sql);
                 System.out.print("Record Saved");
             }catch(Exception e)
