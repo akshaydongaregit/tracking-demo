@@ -20,7 +20,7 @@
         <%@page import="java.io.PrintWriter"%>
         <%@page import="java.io.FileWriter"%>
         <%@page import="java.util.*"%>
-        <@page import="java.text.SimpleDateFormat"%>
+        <%@page import="java.text.SimpleDateFormat"%>
         
         <%@page import="java.sql.*" %>'
         
