@@ -21,6 +21,36 @@
         <%@page import="java.io.FileWriter"%>
         <%@page import="java.util.*"%>
         
+        <%@page import="java.sql.*" %>
+         <%
+            
+            String latt=request.getParameter("latt");
+            String logt=request.getParameter("logt");
+            String name=request.getParameter("name");
+            
+            String SQL_DRIVER="com.mysql.jdbc.Driver";
+            String SQL_URL="jdbc:mysql://172.30.95.191:3306/sqldb";
+            Connection cn=null;
+            Statement st = null;
+            
+            /*----------------------
+            connection to database
+            --------------------------*/
+            try
+            {
+                Class.forName(SQL_DRIVER);
+                cn=DriverManager.getConnection(SQL_URL,"shridhar","shridhar");
+                out.print("\n connection successfull ");
+            }catch(Exception e)
+             {
+                out.print("<script type=\"text/javascript\"> alert(\"Error occured while opening database "+e+"\"); </script>");
+                out.println("Error occured while opening database : "+e);
+             }
+             out.print("<br> connection complete");
+             
+             
+         %>
+        
         <% 
             File coordsFile=new File("./coords.txt");
             
@@ -37,9 +67,7 @@
                 System.out.print("<br>--File created-- ");
                 out.print("<br>-- coords.txt File created --");
             }
-            String latt=request.getParameter("latt");
-            String logt=request.getParameter("logt");
-            String name=request.getParameter("name");
+            
             
             //creating to temp
             File tempFile = new File("./temp.txt");
