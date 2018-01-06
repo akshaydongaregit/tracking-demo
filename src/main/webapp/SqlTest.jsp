@@ -19,7 +19,7 @@
             {
                 Class.forName(SQL_DRIVER);
                 cn=DriverManager.getConnection(SQL_URL,"shridhar","shridhar");
-                //out.print("\n connection successfull ");
+                out.print("\n connection successfull ");
             }catch(Exception e)
              {
 
