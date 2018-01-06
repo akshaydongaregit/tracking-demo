@@ -52,9 +52,11 @@
             
             try
             {
+                java.text.SimpleDateFormat dformat=new SimpleDateFormat("YYYY-MM-DD hh:mm:ss.SS");
+                String sdate=dformat.format(new java.util.Date());
                 
                 st=cn.createStatement();
-                String sql="insert into locations(emp_id,name,latt,logt,utime) values('1' , '"+name+"','"+latt+"','"+logt+"','"+new java.util.Date().toString()+"')";
+                String sql="insert into locations(emp_id,name,latt,logt,utime) values('1' , '"+name+"','"+latt+"','"+logt+"','"+sdate+"')";
                 st.execute(sql);
                 System.out.print("Record Saved");
             }catch(Exception e)
