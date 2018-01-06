@@ -26,6 +26,7 @@
                 out.print("<script type=\"text/javascript\"> alert(\"Error occured while opening database "+e+"\"); </script>");
                 out.println("Error occured while opening database : "+e);
              }
+             out.print("<br> connection complete");
   %>
 </body>
 </html>
