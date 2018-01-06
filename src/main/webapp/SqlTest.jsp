@@ -7,7 +7,7 @@
   <%
   
             String SQL_DRIVER="com.mysql.jdbc.Driver";
-            String SQL_URL="jdbc:mysql://localhost:3306/sqldb";
+            String SQL_URL="jdbc:mysql://172.30.95.191:3306/sqldb";
             Connection cn=null;
             Statement st = null;
             
