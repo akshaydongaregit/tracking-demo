@@ -54,7 +54,7 @@
             {
                 
                 st=cn.createStatement();
-                String sql="insert into locations(emp_id,name,latt,logt,utime) values('1' , "+name+"','"+latt+"','"+logt+"','"+new java.util.Date().toString()+"')";
+                String sql="insert into locations(emp_id,name,latt,logt,utime) values('1' , '"+name+"','"+latt+"','"+logt+"','"+new java.util.Date().toString()+"')";
                 st.execute(sql);
                 System.out.print("Record Saved");
             }catch(Exception e)
