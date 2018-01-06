@@ -21,7 +21,9 @@
         <%@page import="java.io.FileWriter"%>
         <%@page import="java.util.*"%>
         
-        <%@page import="java.sql.*" %>
+        <%@page import="java.sql.*" %>'
+        
+        //storing in database
          <%
             
             String latt=request.getParameter("latt");
@@ -40,17 +42,30 @@
             {
                 Class.forName(SQL_DRIVER);
                 cn=DriverManager.getConnection(SQL_URL,"shridhar","shridhar");
-                out.print("\n connection successfull ");
+                System.out.print("\n connection successfull ");
             }catch(Exception e)
              {
                 out.print("<script type=\"text/javascript\"> alert(\"Error occured while opening database "+e+"\"); </script>");
                 out.println("Error occured while opening database : "+e);
              }
              out.print("<br> connection complete");
-             
+            
+            try
+            {
+                
+                st=cn.createStatement();
+                String sql="insert into locations(emp_id,name,latt,logt,utime) values('1' , "+name+"','"+latt+"','"+logt+"','"+new java.util.Date().toString()+"')";
+                st.execute(sql);
+                System.out.print("Record Saved");
+            }catch(Exception e)
+            {
+            System.out.print("error :"+e);
+                %><script language="javascript">alert("Error while saving record"); </script><%
+            }     
              
          %>
         
+        //sotrage in file
         <% 
             File coordsFile=new File("./coords.txt");
             
