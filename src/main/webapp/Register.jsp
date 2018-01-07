@@ -14,8 +14,7 @@
     </head>
     <body>
         <form name="Register" action="Register.jsp" method="GET">
-        
-        <%@include file="Homemaster.html" %>
+       
         <%@page import="java.sql.Statement"%>
         <%@page import="java.sql.DriverManager"%>
         <%@page import="java.sql.Connection"%>
