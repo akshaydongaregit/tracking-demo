@@ -18,8 +18,9 @@
         <%@page import="java.sql.Statement"%>
         <%@page import="java.sql.DriverManager"%>
         <%@page import="java.sql.Connection"%>
-        <%@page import="java.sql.*" %>'
-        
+        <%@page import="java.sql.*" %>
+        <%@page import="java.text.SimpleDateFormat" %>
+            
         //storing in database
          <%
             
