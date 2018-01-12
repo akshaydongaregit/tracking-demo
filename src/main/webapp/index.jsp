@@ -17,12 +17,14 @@
             {
               height:60px;
               width:60%;
-              background:rgba(0,0,200,200);
+              background:rgba(0,0,140,120);
               color:#FFF;
               margin-left:20%;
               font:bold 100%/1.5 "Lucida Grande";
-              padding:10%;
-              border:3px solid rgba(0,0,100,200); 
+              padding:2%;
+              padding-left:10%;
+              border:3px solid rgba(10,10,40,220); 
+              box-sizing: border-box;
             }
             .panel-link:hover
             {
