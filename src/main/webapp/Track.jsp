@@ -26,6 +26,7 @@
     </style>
   </head>
   <body>
+      <%@include file="database.jsp"  %>
         <%
         String lat=request.getParameter("latt");
         String lng=request.getParameter("logt");
