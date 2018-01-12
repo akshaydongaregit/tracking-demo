@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Admin signup</title>
+        <title>Registration</title>
         <link rel="stylesheet" type="text/css" href="bootstrap.css">
     </head>
     <body>
@@ -48,7 +48,7 @@
              }
              //out.print("<br> connection complete");
              
-             if(request.getParameter("Employee")!=null)
+             if(request.getParameter("txt_full_name")!=null)
              try
             {
                 java.text.SimpleDateFormat dformat=new SimpleDateFormat("YYYY-MM-DD hh:mm:ss.SS");
@@ -58,6 +58,7 @@
                 String sql="insert into registration(full_name,contact_no,email_id,age,gender,passward,security_code) values ('"+request.getParameter("txt_full_name")+"','"+request.getParameter("txt_contact_no")+"','"+request.getParameter("txt_email")+"','"+request.getParameter("txt_Age")+"','"+request.getParameter("Gender")+"','"+request.getParameter("txt_password")+"','"+request.getParameter("txt_security_code")+"')";
                 st.execute(sql);
                 System.out.print("Record Saved");
+                %><script language="javascript">alert("Record Saved Successfully"); </script><%
             }catch(Exception e)
             {
             System.out.print("error :"+e);
