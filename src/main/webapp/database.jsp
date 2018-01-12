@@ -1,6 +1,5 @@
         <%@page import="java.sql.*" %>
-        
-        //storing in database
+       
          <%
             String SQL_DRIVER="com.mysql.jdbc.Driver";
             String SQL_URL="jdbc:mysql://172.30.95.191:3306/sqldb";
