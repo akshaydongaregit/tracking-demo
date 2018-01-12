@@ -19,7 +19,7 @@
   <body>
     <h2>Track Bus with Our Tracking Service</h2>
       
-    <a href="View_Location.jsp">
+    <a href="View_Position.jsp">
       <div class="panel-link">
         <h4> View Connected </h4>
       </div>
