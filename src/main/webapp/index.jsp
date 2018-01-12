@@ -20,10 +20,11 @@
               background:rgba(0,0,140,120);
               color:#FFF;
               margin-left:20%;
+              margin-top:2%;
               font:bold 100%/1.5 "Lucida Grande";
-              padding:2%;
+              padding:0.4%;
               padding-left:10%;
-              border:3px solid rgba(10,10,40,220); 
+              border:2px solid rgba(10,10,40,220); 
               box-sizing: border-box;
             }
             .panel-link:hover
