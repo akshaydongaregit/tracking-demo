@@ -21,7 +21,7 @@
             {
                 st=cn.createStatement();
                 String sql="select e_id,name from connected";
-                ResultSet rs = stmt.executeQuery(sql);
+                ResultSet rs = st.executeQuery(sql);
                 
                 %><table><%
                 while(rs.next())
