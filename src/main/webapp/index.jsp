@@ -17,19 +17,24 @@
             {
               height:60px;
               width:60%;
-              background:#22ff22;
+              background:rgba(0,0,200,200);
               color:#FFF;
               margin-left:20%;
               font:bold 100%/1.5 "Lucida Grande";
               padding:10%;
-              
+              border:3px solid rgba(0,0,100,200); 
+            }
+            .panel-link:hover
+            {
+              background:rgba(0,0,0,0);
+              color:#00f;
             }
           
             .title
             {
               height:80px;
               width:80%;
-              background:#2222ff;
+              background:rgba(10,10,10,220);
               color:#FFF;
               padding:2%;
               margin-left:10%;
