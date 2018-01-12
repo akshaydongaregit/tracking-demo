@@ -23,17 +23,21 @@
                 String sql="select e_id,name from connected";
                 ResultSet rs = st.executeQuery(sql);
                 
-                %><table><%
+                
                 while(rs.next())
                 {
                     int id=rs.getInt("e_id");
                     String name=rs.getString("name");
-                    %><a href="track.jsp?e_id=<%=id%>"> <tr>
-                        <td> <%=id%> </td>
-                        <td><%=name%></td>
-                    </tr> </a> <%
+                    %>
+                        <a href="Track.jsp?e_id="+id>
+                        <div>
+                            <%=id%> &nbsp;&nbsp;&nbsp;
+                            <%=name%>
+                        </div>
+                        </a>
+                     <%
                 }
-                %></table><%
+                
                 
             }catch(Exception e)
             {
