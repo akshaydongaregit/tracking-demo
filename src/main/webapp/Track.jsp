@@ -37,7 +37,7 @@
                 st=cn.createStatement();
                 String sql="select logt,latt from locations_info where emp_id="+request.getParameter("e_id");
                 //SELECT one FROM table WHERE datetimefield <= '2014-12-10 09:45:00'ORDER BY datetimefield DESC LIMIT 1;
-                ResultSet rs = stmt.executeQuery(sql);
+                ResultSet rs = st.executeQuery(sql);
                 
                 if(rs.next())
                 {
