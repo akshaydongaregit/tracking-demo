@@ -26,10 +26,30 @@
     </style>
   </head>
   <body>
-              <%
+        <%
         String lat=request.getParameter("latt");
         String lng=request.getParameter("logt");
         System.out.print("lat : "+lat+" logt : "+lng);
+        
+        if(request.getParameter("e_id")!=null)
+        try
+            {
+                st=cn.createStatement();
+                String sql="select logt,latt from locations_info where emp_id="+request.getParameter("e_id");
+                ResultSet rs = stmt.executeQuery(sql);
+                
+                if(rs.next())
+                {
+                  lng=Double.toString(rs.getDouble("logt"));
+                  lat=Double.toString(rs.getDouble("latt"));
+                }
+                
+            }catch(Exception e)
+            {
+            System.out.print("error :"+e);
+                %><script language="javascript">alert("Error reading record"); </script><%
+            }   
+            
         %>
 
     <div id="map"></div>
