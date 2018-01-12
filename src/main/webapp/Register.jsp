@@ -21,7 +21,7 @@
         <%@page import="java.sql.*" %>
         <%@page import="java.text.SimpleDateFormat" %>
             
-        //storing in database
+        <%-- storing in database --%>
          <%
             
             String latt=request.getParameter("latt");
