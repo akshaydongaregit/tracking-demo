@@ -5,7 +5,8 @@
         <style type="text/css">
             body
             {
-                background-image: url('https://i1.wp.com/www.findyourwallpaper.com/wp-content/uploads/2013/10/volvo-bus-HD-wallpaper-For-Desktop.jpeg?resize=1024%2C757&ssl=1');
+                background-image: url('https://www.goodnet.org/photos/620x0/27785_hd.png');
+                background-size: cover ;
             }
             .panel-link
             {
@@ -18,7 +19,11 @@
     </head>
   <body>
     <h2>Track Bus with Our Tracking Service</h2>
-      <!-- https://www.goodnet.org/photos/620x0/27785_hd.png -->
+      
+    <!-- https://www.goodnet.org/photos/620x0/27785_hd.png
+          https://i1.wp.com/www.findyourwallpaper.com/wp-content/uploads/2013/10/volvo-bus-HD-wallpaper-For-Desktop.jpeg?resize=1024%2C757&ssl=1
+        -->
+    
     <a href="View_Position.jsp">
       <div class="panel-link">
         <h4> View Connected </h4>
