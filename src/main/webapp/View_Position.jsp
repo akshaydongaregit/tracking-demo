@@ -9,10 +9,10 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Connected Users</title>
     </head>
     <body>
-        <h1>Tracking Coords</h1>
+        <h1>Connected Employees</h1>
         <%@page import="java.util.*"%>
         <%@page import="java.io.*"%>
         <%@include file="database.jsp" %>
@@ -33,6 +33,7 @@
                         <td><%=name%></td>
                     </tr> </a> <%
                 }
+                %></table><%
                 
             }catch(Exception e)
             {
