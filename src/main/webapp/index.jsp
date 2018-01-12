@@ -18,7 +18,7 @@
     </head>
   <body>
     <h2>Track Bus with Our Tracking Service</h2>
-      
+      <!-- https://www.goodnet.org/photos/620x0/27785_hd.png -->
     <a href="View_Position.jsp">
       <div class="panel-link">
         <h4> View Connected </h4>
