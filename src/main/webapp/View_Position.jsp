@@ -17,8 +17,50 @@
         <%@page import="java.io.*"%>
         
         <%
-        
-            out.println("<h1>Servlet view_location at " + request.getContextPath() + "</h1>");
+             String SQL_DRIVER="com.mysql.jdbc.Driver";
+            String SQL_URL="jdbc:mysql://172.30.95.191:3306/sqldb";
+            Connection cn=null;
+            Statement st = null;
+            
+            /*----------------------
+            connection to database
+            --------------------------*/
+            try
+            {
+                Class.forName(SQL_DRIVER);
+                cn=DriverManager.getConnection(SQL_URL,"shridhar","shridhar");
+                System.out.print("\n connection successfull ");
+            }catch(Exception e)
+             {
+                out.print("<script type=\"text/javascript\"> alert(\"Error occured while opening database "+e+"\"); </script>");
+                out.println("Error occured while opening database : "+e);
+             }
+             out.print("<br> connection complete");
+            
+            try
+            {
+                st=cn.createStatement();
+                String sql="select e_id,name from connected";
+                ResultSet rs = stmt.executeQuery(sql);
+                
+                %><table><%
+                while(rs.next())
+                {
+                    int id=rs.getInt("e_id");
+                    String name=rs.getString("name");
+                    %><a href="track.jsp?e_id=<%=id%>"> <tr>
+                        <td> <%=id%> </td>
+                        <td><%=name%></td>
+                    </tr> </a> <%
+                }
+                
+            }catch(Exception e)
+            {
+            System.out.print("error :"+e);
+                %><script language="javascript">alert("Error reading record"); </script><%
+            }   
+            
+            /*
             File coordsFile = new File("coords.txt");
             if(!coordsFile.exists())
             {
@@ -41,7 +83,8 @@
             }
             in.close();
             out.print("<br>---------------------------");
-        
+            */
+            
             %>
     </body>
 </html>
