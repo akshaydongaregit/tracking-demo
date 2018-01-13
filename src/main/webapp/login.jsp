@@ -21,7 +21,7 @@ try
                 out.print(name+" ");
                 }else
                 {
-                out.print("NOK ")
+                out.print("NOK ");
                 }
                 
             }catch(Exception e)
