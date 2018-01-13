@@ -10,6 +10,27 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Connected Users</title>
+        <style type="text/css">
+            a
+            {
+                text-decoration: none;
+            }
+          
+            .panel-link
+            {
+              height:60px;
+              width:60%;
+              background:rgba(0,0,140,120);
+              color:#FFF;
+              margin-left:20%;
+              margin-top:2%;
+              font:bold 100%/1.5 "Lucida Grande";
+              padding:0.4%;
+              padding-left:10%;
+              border:2px solid rgba(10,10,40,220); 
+              box-sizing: border-box;
+            }
+        </style>
     </head>
     <body>
         <h1>Connected Employees</h1>
@@ -29,8 +50,8 @@
                     int id=rs.getInt("e_id");
                     String name=rs.getString("name");
                     %>
-                        <a href="Track.jsp?e_id="+id>
-                        <div>
+                        <a href="<%="Track.jsp?e_id="+id%>" >
+                        <div class="panel-link">
                             <%=id%> &nbsp;&nbsp;&nbsp;
                             <%=name%>
                         </div>
