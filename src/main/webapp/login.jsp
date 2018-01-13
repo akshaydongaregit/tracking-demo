@@ -10,9 +10,15 @@ try
                 ResultSet rs = st.executeQuery(sql);
                 if(rs.next())
                 {
+                int id=rs.getInt("r_id");
+                String name=rs.getString("full_name");
+                
+                sql = "insert into connected(e_id,name) values("+id+",'"+name+"')";
+                st.execute(sql);
+                
                 out.print("OK ");
-                out.print(rs.getInt("r_id")+" ");
-                out.print(rs.getInt("full_name")+" ");
+                out.print(id+" ");
+                out.print(name+" ");
                 }else
                 {
                 out.print("NOK ")
@@ -20,7 +26,7 @@ try
                 
             }catch(Exception e)
             {
-            System.out.print("error :"+e);
+                System.out.print("error :"+e);
                 out.print("ERROR ");
             }  
 %>
