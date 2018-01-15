@@ -30,6 +30,7 @@
             String latt=request.getParameter("latt");
             String logt=request.getParameter("logt");
             String name=request.getParameter("name");
+            String eid=request.getParameter("eid");
             
             String SQL_DRIVER="com.mysql.jdbc.Driver";
             String SQL_URL="jdbc:mysql://172.30.95.191:3306/sqldb";
@@ -55,8 +56,7 @@
             {
                 java.text.SimpleDateFormat dformat=new SimpleDateFormat("YYYY-MM-DD hh:mm:ss.SS");
                 String sdate=dformat.format(new java.util.Date());
-                String eid="1";
-                
+  
                 st=cn.createStatement();
                 String sql="insert into locations_info(emp_id,name,latt,logt,utime) values('"+eid+"','"+name+"','"+latt+"','"+logt+"','"+sdate+"')";
                 st.execute(sql);
