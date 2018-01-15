@@ -5,7 +5,7 @@ if(action!=null && action.equalsIgnoreCase("logout"))
 try
             {
                 st=cn.createStatement();
-                String sql="delete from connected where e_id="+request.getParameter("id");
+                String sql="delete from connected where e_id="+request.getParameter("uid");
                 int d = st.executeUpdate(sql);
                 if(d>0)
                 {
