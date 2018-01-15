@@ -27,16 +27,20 @@
   </head>
   <body>
       <%@include file="database.jsp"  %>
+      
         <%
         String lat=request.getParameter("latt");
         String lng=request.getParameter("logt");
+        java.text.SimpleDateFormat dformat=new SimpleDateFormat("YYYY-MM-DD hh:mm:ss.SS");
+        String sdate=dformat.format(new java.util.Date());
+                
         System.out.print("lat : "+lat+" logt : "+lng);
         
         if(request.getParameter("e_id")!=null)
         try
             {
                 st=cn.createStatement();
-                String sql="select logt,latt from locations_info where emp_id="+request.getParameter("e_id");
+                String sql="select logt,latt from locations_info where emp_id="+request.getParameter("e_id")+" and utime <= '"+sdate+"' ORDER BY utime DESC LIMIT 1 ";
                 //SELECT one FROM table WHERE datetimefield <= '2014-12-10 09:45:00'ORDER BY datetimefield DESC LIMIT 1;
                 System.out.print("sql : "+sql);
                 ResultSet rs = st.executeQuery(sql);
