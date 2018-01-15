@@ -31,7 +31,7 @@
         <%
         String lat=request.getParameter("latt");
         String lng=request.getParameter("logt");
-        java.text.SimpleDateFormat dformat=new SimpleDateFormat("YYYY-MM-DD hh:mm:ss.SS");
+        java.text.SimpleDateFormat dformat=new java.text.SimpleDateFormat("YYYY-MM-DD hh:mm:ss.SS");
         String sdate=dformat.format(new java.util.Date());
                 
         System.out.print("lat : "+lat+" logt : "+lng);
