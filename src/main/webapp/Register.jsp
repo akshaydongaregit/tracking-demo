@@ -73,20 +73,47 @@
             <div class="row">
                 <div class="col-sm-4"></div>
                 <div class="col-sm-4">
-                    <input type="text" name="txt_full_name" class="form-control" placeholder="Enter Full Name" onkeypress="javascript:return isString(event)">
+                    <select name="Employee" class="form-control">
+                        <option value="text">Employee</option>
+                        <option value="Driver">Driver </option>
+                        <option value="Conductor">Conductor </option>
+                    </select></div>
+                    <div class="col-sm-4"></div>
+                </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                    <input type="text" name="txt_Batch ID" placeholder="Batch ID" class="form-control" onkeypress="javascript:return isNumber(event)">
                 </div>
                 <div class="col-sm-4"></div>
             </div>
             <br>
+                <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                    <input type="text" name="txt_full_name" class="form-control" placeholder="Enter Full Name" onkeypress="javascript:return isString(event)">
+                </div>
+                <div class="col-sm-4"></div>
+                </div>
+            <br>
              <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                    <input type="text" name="txt_Address" class="form-control" placeholder="Address" onkeypress="javascript:return isAlpha(event)">
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+            <br>
+                <div class="row">
                 <div class="col-sm-4"></div>
                 <div class="col-sm-4">
                     <input type="text" name="txt_contact_no" placeholder="Contact no" class="form-control" onkeypress="javascript:return isContact(event)" maxlength="10">
                 </div>
                 <div class="col-sm-4"></div>
-            </div>
+                </div>
             <br>
-             <div class="row">
+                <div class="row">
                 <div class="col-sm-4"></div>
                 <div class="col-sm-4"> 
                     <input type="text" name="txt_email" placeholder="xyz@gmail.com" class="form-control">
@@ -94,6 +121,13 @@
                 </div>
                 <div class="col-sm-4"></div>
                 </div>
+                <br>
+                <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                    <input type="date" name="txt_Joining Date" class="form-control" placeholder="Joining Date" > <!--onkeypress="javascript:return isAlpha(event)">-->
+                </div>
+                <div class="col-sm-4"></div>
                 <br>
             
              <div class="row">
@@ -144,7 +178,10 @@
                     
                     <div class="well" style="opacity: 0.5; width: 50%; margin-left: 300px;background-color: highlight;">
                         <center>
-                            <input type="submit" name="btn_SignIn" class="btn btn-primary" value="SignIn" onclick="javascript:return.ValidateEmail(document.myform.email)">
+                            <input type="submit" name="btn_Save" class="btn btn-primary" value="Save" onclick="javascript:return.ValidateEmail(document.myform.email)">
+                             <input type="Submit" name="btn_Update" style="margin-left: 50px;" class="btn btn-primary" value="Update">
+                             <input type="Submit" name="btn_Delete" style="margin-left: 50px;" class="btn btn-primary" value="Delete">
+                             <input type="Submit" name="btn_Search"style="margin-left: 50px;" class="btn btn-primary" value="Search">
                         </center>
                     </div>
                           
