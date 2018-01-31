@@ -20,16 +20,8 @@
          <%@page import="java.sql.Statement"%>
         <%@page import="java.sql.DriverManager"%>
         <%@page import="java.sql.Connection"%>
-        <% 
-            Connection cn;
-            Statement st; 
-            String DB_URL = "jdbc:mysql://localhost/bus_tracking";
+        <%@include file="database.jsp"%>
             
-            
-            Class.forName("com.mysql.jdbc.Driver");
-            cn = DriverManager.getConnection(DB_URL,"root","root");
-            System.out.println("connection successfull");
-        %>
         <%
              st=cn.createStatement();
              
