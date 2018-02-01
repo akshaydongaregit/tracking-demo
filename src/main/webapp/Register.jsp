@@ -68,7 +68,7 @@
         
         <div class="container">
             <div class="well" style="padding-top: 5px;padding-bottom: 5px;background-color: #f0ad4e">
-                <h1><center>Admin Signup</center></h1>
+                <h1><center>Employee Registration</center></h1>
             </div>
             <div class="row">
                 <div class="col-sm-4"></div>
