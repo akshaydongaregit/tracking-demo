@@ -70,6 +70,11 @@
         <h3> Download Application </h3>
       </div>
     </a>
+    <a href="Schedule.jsp">
+      <div class="panel-link">
+        <h3> Schedule </h3>
+      </div>
+    </a>
     
   </body>
 </html>
