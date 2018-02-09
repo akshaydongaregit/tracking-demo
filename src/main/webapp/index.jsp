@@ -17,7 +17,7 @@
             {
               height:60px;
               width:60%;
-              background:rgba(0,0,140,120);
+              background:#f0ad4e;
               color:#FFF;
               margin-left:20%;
               margin-top:2%;
@@ -29,7 +29,7 @@
             }
             .panel-link:hover
             {
-              background:rgba(0,0,0,0);
+              background:#f0ad4e;
               color:#00f;
             }
           
@@ -37,7 +37,7 @@
             {
               height:80px;
               width:80%;
-              background:rgba(10,10,10,220);
+              background:#f0ad4e;
               color:#FFF;
               padding:2%;
               margin-left:10%;
@@ -48,7 +48,7 @@
     </head>
   <body>
     <div class="title">
-    <h2>Track Bus with Our Tracking Service</h2>
+    <h2>Bus Tracking Using Driver Mobile GPS Tracking</h2>
     </div>
     <!-- https://www.goodnet.org/photos/620x0/27785_hd.png
           https://i1.wp.com/www.findyourwallpaper.com/wp-content/uploads/2013/10/volvo-bus-HD-wallpaper-For-Desktop.jpeg?resize=1024%2C757&ssl=1
@@ -63,18 +63,18 @@
       <div class="panel-link">
         <h3> Register new Employee </h3>
       </div>
+    </a>  
+       <a href="Schedule.jsp">
+      <div class="panel-link">
+        <h3> Schedule </h3>
+      </div>
     </a>
-    
     <a href="download.jsp">
       <div class="panel-link">
         <h3> Download Application </h3>
       </div>
     </a>
-    <a href="Schedule.jsp">
-      <div class="panel-link">
-        <h3> Schedule </h3>
-      </div>
-    </a>
+
     
   </body>
 </html>
