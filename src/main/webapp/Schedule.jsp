@@ -109,7 +109,7 @@
             <div class="row">
                 <div class="col-lg-4"></div>
                 <div class="col-lg-4">
-                    <input type="text" name="txt_Route" class="form-control" value="<%=route%>" placeholder="Route" onkeypress="javascript:return isAlpha(event)">
+                    <input type="text" name="txt_Route" class="form-control" value="<%=route=null?"":route%>" placeholder="Route" onkeypress="javascript:return isAlpha(event)">
                 </div>
                   <div class="col-lg-4"></div>
             </div>
@@ -117,7 +117,7 @@
              <div class="row">
                 <div class="col-lg-4"></div>
                 <div class="col-lg-4">
-                    <input type="text" name="txt_Driver Name" class="form-control" value="<%=driver_name%>" placeholder="Driver Name" onkeypress="javascript:return isString(event)">
+                    <input type="text" name="txt_Driver Name" class="form-control" value="<%=driver_name=null?"":driver_name%>" placeholder="Driver Name" onkeypress="javascript:return isString(event)">
                 </div>
                   <div class="col-lg-4"></div>
             </div>
@@ -125,7 +125,7 @@
             <div class="row">
                 <div class="col-lg-4"></div>
                 <div class="col-lg-4">
-                    <input type="text" name="txt_Conductor Name" class="form-control" value="<%=conductor_name%>" placeholder="Conductor Name" onkeypress="javascript:return isString(event)">
+                    <input type="text" name="txt_Conductor Name" class="form-control" value="<%=conductor_name=null?"":conductor_name%>" placeholder="Conductor Name" onkeypress="javascript:return isString(event)">
                 </div>
                   <div class="col-lg-4"></div>
             </div>
@@ -133,7 +133,7 @@
            <div class="row">
                 <div class="col-lg-4"></div>
                 <div class="col-lg-4">
-                    <input type="Time" name="txt_Departure" class="form-control" value="<%=departure%>" placeholder="Departure" onkeypress="javascript:return isFloat(event)">
+                    <input type="Time" name="txt_Departure" class="form-control" value="<%=departure=null?"":departure%>" placeholder="Departure" onkeypress="javascript:return isFloat(event)">
                 </div>
                   <div class="col-lg-4"></div>
             </div>
@@ -141,7 +141,7 @@
            <div class="row">
                 <div class="col-lg-4"></div>
                 <div class="col-lg-4">
-                    <input type="text" name="txt_Bus No" class="form-control" value="<%=bus_no%>" placeholder="Bus No." onkeypress="javascript:return isAlpha(event)">
+                    <input type="text" name="txt_Bus No" class="form-control" value="<%=bus_no=null?"":bus_no%>" placeholder="Bus No." onkeypress="javascript:return isAlpha(event)">
                 </div>
                   <div class="col-lg-4"></div>
             </div>
@@ -149,7 +149,7 @@
            <div class="row">
                 <div class="col-lg-4"></div>
                 <div class="col-lg-4">
-                    <input type="text" name="txt_Distance" class="form-control" value="<%=distance%>" placeholder="Distance" onkeypress="javascript:return isAlpha(event)">
+                    <input type="text" name="txt_Distance" class="form-control" value="<%=distance=null?"":distance%>" placeholder="Distance" onkeypress="javascript:return isAlpha(event)">
                 </div>
                   <div class="col-lg-4"></div>
             </div>
