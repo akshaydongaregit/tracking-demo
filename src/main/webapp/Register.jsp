@@ -14,6 +14,7 @@
     </head>
     <body>
         <form name="Register" action="Register.jsp" method="GET">
+         <%@include file="Adminmaster.html" %>    
        
         <%@page import="java.sql.Statement"%>
         <%@page import="java.sql.DriverManager"%>
@@ -134,7 +135,6 @@
                 <div class="col-sm-4"></div>
                 <div class="col-sm-4"> 
                     <input type="text" name="txt_Age" placeholder="Age" class="form-control" onkeypress="javascript:return isNumber(event)">
- 
                 </div>
                 <div class="col-sm-4"></div>
                 </div>
