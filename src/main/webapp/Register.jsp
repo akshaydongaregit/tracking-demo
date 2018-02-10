@@ -121,14 +121,15 @@
                 </div>
                 <div class="col-sm-4"></div>
                 </div>
-                <br>
+            <br>
                 <div class="row">
                 <div class="col-sm-4"></div>
                 <div class="col-sm-4">
                     <input type="date" name="txt_Joining Date" class="form-control" placeholder="Joining Date" > <!--onkeypress="javascript:return isAlpha(event)">-->
                 </div>
                 <div class="col-sm-4"></div>
-                <br>
+                </div>
+             <br>
                 <div class="row">
                 <div class="col-sm-4"></div>
                 <div class="col-sm-4"> 
@@ -136,9 +137,9 @@
                 </div>
                 <div class="col-sm-4"></div>
                 </div>
-                <br>
+              <br>
                 <div class="row">
-                 <div class="col-sm-4"></div>
+                <div class="col-sm-4"></div>
                 <div class="col-sm-4"> 
                        <select name="Gender" class="form-control">
                         <option value="gender">Gender</option>
@@ -146,27 +147,24 @@
                         <option value="female">Female</option>
                         <div class="col-sm-4"> </div>  
                     </select>
-                </div>
-                <br>
-                <div class="row">
-                     <div class="col-sm-4"></div>
-                <div class="col-sm-4"> 
-                    <input type="password" placeholder="Password" name="txt_password" class="form-control">
-                    <div class="col-sm-4"> 
-                        <br>
-                    
-                </div>
-                </div>
-                </div>
+                 </div>
+              <br>
                     <div class="row">
-                        <div class="col-sm-4"></div>
-                     <div class="col-sm-4"> 
-                     <input type="password" placeholder="Security Code" name="txt_security_code" class="form-control">
-                     </div>
-                    
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-4"> 
+                    <input type="password" placeholder="Password" name="txt_password" class="form-control">
+                    </div>
+                    <div class="col-sm-4"></div>
+                    </div>
+               <br>
+                    <div class="row">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-4"> 
+                    <input type="password" placeholder="Security Code" name="txt_security_code" class="form-control">
+                    </div>   
                     <div class="col-sm-4"> </div>
-                    </div><br>
-                    
+                    </div>
+                <br>
                     <div class="well" style="opacity: 0.5; width: 50%; margin-left: 300px;background-color: highlight;">
                         <center>
                             <input type="submit" name="btn_Save" class="btn btn-primary" value="Save" onclick="javascript:return.ValidateEmail(document.myform.email)">
