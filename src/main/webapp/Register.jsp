@@ -118,7 +118,6 @@
                 <div class="col-sm-4"></div>
                 <div class="col-sm-4"> 
                     <input type="text" name="txt_email" placeholder="xyz@gmail.com" class="form-control">
- 
                 </div>
                 <div class="col-sm-4"></div>
                 </div>
@@ -130,8 +129,7 @@
                 </div>
                 <div class="col-sm-4"></div>
                 <br>
-            
-             <div class="row">
+                <div class="row">
                 <div class="col-sm-4"></div>
                 <div class="col-sm-4"> 
                     <input type="text" name="txt_Age" placeholder="Age" class="form-control" onkeypress="javascript:return isNumber(event)">
@@ -139,24 +137,17 @@
                 <div class="col-sm-4"></div>
                 </div>
                 <br>
-            
-             <div class="row">
+                <div class="row">
                  <div class="col-sm-4"></div>
                 <div class="col-sm-4"> 
-                    
-                    <select name="Gender" class="form-control">
+                       <select name="Gender" class="form-control">
                         <option value="gender">Gender</option>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
-                           
-                       
-                      <div class="col-sm-4"> </div>
-                          
+                        <div class="col-sm-4"> </div>  
                     </select>
- 
                 </div>
-                <br><br><br>
-                 
+                <br>
                 <div class="row">
                      <div class="col-sm-4"></div>
                 <div class="col-sm-4"> 
