@@ -37,14 +37,14 @@
                  String password=request.getParameter("txt_password");
                  String seccode=request.getParameter("txt_security_code");
                  
-             if(request.getParameter("txt_Full Name")!=null)
+             if(request.getParameter("btn_Save")!=null)
              try
             {
                 java.text.SimpleDateFormat dformat=new SimpleDateFormat("YYYY-MM-DD hh:mm:ss.SS");
                 String sdate=dformat.format(new java.util.Date());
                 
                 st=cn.createStatement();
-                String sql="insert into registration(full_name,contact_no,email_id,age,gender,passward,security_code) values ('"+age+"','"+contact_no+"','"+email+"','"+request.getParameter("txt_Age")+"','"+request.getParameter("Gender")+"','"+request.getParameter("txt_password")+"','"+request.getParameter("txt_security_code")+"')";
+                String sql="insert into registration(full_name,contact_no,email_id,age,gender,passward,security_code) values ('"+employee_name+"','"+contact_no+"','"+email+"','"+age+"','"+gender+"','"+password+"','"+seccode+"')";
                 st.execute(sql);
                 System.out.print("Record Saved");
                 %><script language="javascript">alert("Record Saved Successfully"); </script><%
