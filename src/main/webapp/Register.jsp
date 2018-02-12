@@ -66,6 +66,71 @@
                 %><script language="javascript">alert("Error while saving record"); </script><%
             }     
          %>
+            
+            <%   
+                String employee=request.getParameter("Employee");
+                 String batch_id=request.getParameter("txt_Batch ID");
+                 String employee_name=request.getParameter("txt_Full Name");
+                 String address=request.getParameter("txt_Address");
+                 String contact_no=request.getParameter("txt_Contact No.");
+                 String joining_date=request.getParameter("txt_Joining Date");
+                 String gender=request.getParameter("Gender");
+                 String age=request.getParameter("txt_Age");
+                 
+                if(request.getParameter("btn_Update")!=null)
+            try
+           {
+                
+                 
+                 st=cn.createStatement();
+                 String sql="Update employee_registration set employee='"+employee+"',employee_Name='"+employee_name+"',Contact_no='"+contact_no+"',Joining_date='"+joining_date+"',address='"+address+"',age='"+age+"',Gender='"+gender+"' where batch_id='"+batch_id+"'";             
+                 st.executeUpdate(sql);
+                      %><script language="javascript">alert("Record Updated"); </script><% 
+               
+            }catch(Exception e)
+            {
+            System.out.print("error :"+e);
+                %><script language="javascript">alert("Record Not Found"); </script><%
+            }
+            
+            if(request.getParameter("btn_Delete")!=null)
+            {
+                st=cn.createStatement();
+                 String sql="delete from employee_registration where batch_id="+request.getParameter("txt_Batch ID");
+                 int r = st.executeUpdate(sql);
+                 %><script language="javascript">alert("<%=r%>"+" Record(s) deleted"); </script><%
+            }
+                %>
+                
+                <%
+                    if(request.getParameter("btn_Search")!=null)
+                        try
+                    {
+                        st=cn.createStatement();
+                        String sql="select employee,employee_name,contact_no,Joining_date,address,age,gender from employee_registration where batch_id="+request.getParameter("txt_Batch ID");
+                        ResultSet rs = st.executeQuery(sql);
+                        if(rs.next())
+                        {
+                           employee=rs.getString("employee");
+                           employee_name=rs.getString("employee_name");
+                           contact_no=rs.getBigDecimal("contact_no").toString();
+                           joining_date=rs.getDate("Joining_date").toString();
+                           address=rs.getString("address");
+                           age=rs.getInt("age")+"";
+                           gender=rs.getString("age");
+                        }else
+                        {
+                        %><script language="javascript">alert("<%=rs%>"+" Records Not Found"); </script><%
+                        }
+                    }
+                    catch(Exception e)
+                    {
+                        System.out.print("error :"+e);
+                        %><script language="javascript">alert("Error while searching"); </script><%
+                            
+                    }
+                    %>
+
         
         <div class="container">
             <div class="well" style="padding-top: 5px;padding-bottom: 5px;background-color: #f0ad4e">
