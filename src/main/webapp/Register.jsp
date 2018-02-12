@@ -13,6 +13,7 @@
         <link rel="stylesheet" type="text/css" href="bootstrap.css">
     </head>
     <body>
+        <%@include file="database.jsp" %>  
         <form name="Register" action="Register.jsp" method="GET">
          <%@include file="Adminmaster.html" %>    
        
@@ -24,39 +25,26 @@
             
         <%-- storing in database --%>
          <%
-            
-            String latt=request.getParameter("latt");
-            String logt=request.getParameter("logt");
-            String name=request.getParameter("name");
-            
-            String SQL_DRIVER="com.mysql.jdbc.Driver";
-            String SQL_URL="jdbc:mysql://172.30.95.191:3306/sqldb";
-            Connection cn=null;
-            Statement st = null;
-            
-            /*----------------------
-            connection to database
-            --------------------------*/
-            try
-            {
-                Class.forName(SQL_DRIVER);
-                cn=DriverManager.getConnection(SQL_URL,"shridhar","shridhar");
-                System.out.print("\n connection successfull ");
-            }catch(Exception e)
-             {
-                out.print("<script type=\"text/javascript\"> alert(\"Error occured while opening database "+e+"\"); </script>");
-                out.println("Error occured while opening database : "+e);
-             }
-             //out.print("<br> connection complete");
-             
-             if(request.getParameter("txt_full_name")!=null)
+                String employee=request.getParameter("Employee");
+                 String batch_id=request.getParameter("txt_Batch ID");
+                 String employee_name=request.getParameter("txt_full_name");
+                 String address=request.getParameter("txt_Address");
+                 String contact_no=request.getParameter("txt_contact_no.");
+                 String joining_date=request.getParameter("txt_Joining Date");
+                 String gender=request.getParameter("Gender");
+                 String age=request.getParameter("txt_Age");
+                 String email=request.getParameter("txt_email");
+                 String password=request.getParameter("txt_password");
+                 String seccode=request.getParameter("txt_security_code");
+                 
+             if(request.getParameter("txt_Full Name")!=null)
              try
             {
                 java.text.SimpleDateFormat dformat=new SimpleDateFormat("YYYY-MM-DD hh:mm:ss.SS");
                 String sdate=dformat.format(new java.util.Date());
                 
                 st=cn.createStatement();
-                String sql="insert into registration(full_name,contact_no,email_id,age,gender,passward,security_code) values ('"+request.getParameter("txt_full_name")+"','"+request.getParameter("txt_contact_no")+"','"+request.getParameter("txt_email")+"','"+request.getParameter("txt_Age")+"','"+request.getParameter("Gender")+"','"+request.getParameter("txt_password")+"','"+request.getParameter("txt_security_code")+"')";
+                String sql="insert into registration(full_name,contact_no,email_id,age,gender,passward,security_code) values ('"+age+"','"+contact_no+"','"+email+"','"+request.getParameter("txt_Age")+"','"+request.getParameter("Gender")+"','"+request.getParameter("txt_password")+"','"+request.getParameter("txt_security_code")+"')";
                 st.execute(sql);
                 System.out.print("Record Saved");
                 %><script language="javascript">alert("Record Saved Successfully"); </script><%
@@ -68,15 +56,7 @@
          %>
             
             <%   
-                String employee=request.getParameter("Employee");
-                 String batch_id=request.getParameter("txt_Batch ID");
-                 String employee_name=request.getParameter("txt_Full Name");
-                 String address=request.getParameter("txt_Address");
-                 String contact_no=request.getParameter("txt_Contact No.");
-                 String joining_date=request.getParameter("txt_Joining Date");
-                 String gender=request.getParameter("Gender");
-                 String age=request.getParameter("txt_Age");
-                 
+                
                 if(request.getParameter("btn_Update")!=null)
             try
            {
