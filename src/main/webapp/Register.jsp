@@ -29,7 +29,7 @@
                  String batch_id=request.getParameter("txt_Batch ID");
                  String employee_name=request.getParameter("txt_full_name");
                  String address=request.getParameter("txt_Address");
-                 String contact_no=request.getParameter("txt_contact_no.");
+                 String contact_no=request.getParameter("txt_contact_no");
                  String joining_date=request.getParameter("txt_Joining Date");
                  String gender=request.getParameter("Gender");
                  String age=request.getParameter("txt_Age");
