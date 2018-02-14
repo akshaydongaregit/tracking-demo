@@ -193,7 +193,7 @@
                         <div class="col-sm-4"> </div>  
                     </select>
                  </div>
-              <br><br>
+              <br><br><br>
                     <div class="row">
                     <div class="col-sm-4"></div>
                     <div class="col-sm-4"> 
@@ -217,16 +217,7 @@
                              <input type="Submit" name="btn_Delete" style="margin-left: 50px;" class="btn btn-primary" value="Delete">
                              <input type="Submit" name="btn_Search"style="margin-left: 50px;" class="btn btn-primary" value="Search">
                         </center>
-                    </div>
-                          
-                            
-           
-                    <div class="col-sm-4"> 
-                        <div class="col-sm-4"> 
-                            <div class="col-sm-4"> 
-                                
-                            </div>
-                                <div class="col-sm-4"> 
+                    </div> 
                                     
                     </div>
                     </div>
