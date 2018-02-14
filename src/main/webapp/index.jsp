@@ -61,7 +61,7 @@
     </a>
     <a href="Register.jsp">
       <div class="panel-link">
-        <h3> Register new Employee </h3>
+        <h3> Register New Employee </h3>
       </div>
     </a>  
        <a href="Schedule.jsp">
