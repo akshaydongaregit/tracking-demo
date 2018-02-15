@@ -42,7 +42,7 @@
             {
                 
                 st=cn.createStatement();
-                String sql="insert into employee_registration (employee,batch_id,employee_name,contact_no,Joining_date,address,age,gender) values('"+request.getParameter("Employee")+"','"+request.getParameter("txt_Batch ID")+"','"+request.getParameter("txt_Full Name")+"',"+request.getParameter("txt_Contact No.")+",'"+request.getParameter("txt_Joining Date")+"','"+request.getParameter("txt_Address")+"','"+request.getParameter("txt_Age")+"','"+request.getParameter("Gender")+"')";
+                String sql="insert into employee_registration (employee,batch_id,employee_name,contact_no,Joining_date,address,age,gender);
                 st.execute(sql);
                 
                 %><script language="javascript">alert("Record Saved Successfully"); </script><% 
