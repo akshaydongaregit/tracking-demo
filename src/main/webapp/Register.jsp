@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Registration</title>
+        <title>Employee_Registration</title>
         <link rel="stylesheet" type="text/css" href="bootstrap.css">
     </head>
     <body>
@@ -42,7 +42,7 @@
             {
                 
                 st=cn.createStatement();
-                String sql="insert into employee_registration (employee,batch_id,employee_name,contact_no,Joining_date,address,age,gender);
+                String sql="insert into employee_registration (employee,batch_id,full_name,address,contact_no,Joining_date,gender,age,email,password,security_code);
                 st.execute(sql);
                 
                 %><script language="javascript">alert("Record Saved Successfully"); </script><% 
