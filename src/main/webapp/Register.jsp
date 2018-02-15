@@ -42,7 +42,7 @@
             {
                 
                 st=cn.createStatement();
-                String sql="insert into employee_registration (employee,batch_id,full_name,address,contact_no,Joining_date,gender,age,email,password,security_code);
+                String sql="insert into employee_registration (employee,batch_id,employee_name,address,contact_no,Joining_date,gender,age,email,password,security_code);
                 st.execute(sql);
                 
                 %><script language="javascript">alert("Record Saved Successfully"); </script><% 
