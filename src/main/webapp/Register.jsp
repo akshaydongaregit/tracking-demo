@@ -38,22 +38,20 @@
                  String seccode=request.getParameter("txt_security_code");
                  
              if(request.getParameter("btn_Save")!=null)
-             try
+            try
             {
-                java.text.SimpleDateFormat dformat=new SimpleDateFormat("YYYY-MM-DD hh:mm:ss.SS");
-                String sdate=dformat.format(new java.util.Date());
                 
                 st=cn.createStatement();
-                String sql="insert into registration(full_name,contact_no,email_id,age,gender,passward,security_code) values ('"+employee_name+"','"+contact_no+"','"+email+"','"+age+"','"+gender+"','"+password+"','"+seccode+"')";
+                String sql="insert into employee_registration (employee,batch_id,employee_name,contact_no,Joining_date,address,age,gender) values('"+request.getParameter("Employee")+"','"+request.getParameter("txt_Batch ID")+"','"+request.getParameter("txt_Full Name")+"',"+request.getParameter("txt_Contact No.")+",'"+request.getParameter("txt_Joining Date")+"','"+request.getParameter("txt_Address")+"','"+request.getParameter("txt_Age")+"','"+request.getParameter("Gender")+"')";
                 st.execute(sql);
-                System.out.print("Record Saved");
-                %><script language="javascript">alert("Record Saved Successfully"); </script><%
+                
+                %><script language="javascript">alert("Record Saved Successfully"); </script><% 
             }catch(Exception e)
             {
             System.out.print("error :"+e);
                 %><script language="javascript">alert("Error while saving record"); </script><%
-            }     
-         %>
+            }
+            %>
             
             <%   
                 
