@@ -35,7 +35,7 @@
                  String age=request.getParameter("txt_Age");
                  String email=request.getParameter("txt_email");
                  String password=request.getParameter("txt_password");
-                 String seccode=request.getParameter("txt_security_code");
+                 String security_code=request.getParameter("txt_security_code");
                  
              if(request.getParameter("btn_Save")!=null)
             try
