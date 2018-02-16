@@ -195,7 +195,7 @@
                     <div class="row">
                     <div class="col-sm-4"></div>
                     <div class="col-sm-4"> 
-                    <input type="password" placeholder="Password" name="txt_password" class="form-control">
+                    <input type="password" placeholder="Password" name="txt_passward" class="form-control">
                     </div>
                     <div class="col-sm-4"></div>
                     </div>
