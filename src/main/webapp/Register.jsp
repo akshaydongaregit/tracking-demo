@@ -34,7 +34,7 @@
                  String gender=request.getParameter("Gender");
                  String age=request.getParameter("txt_Age");
                  String email=request.getParameter("txt_email");
-                 String password=request.getParameter("txt_password");
+                 String passward=request.getParameter("txt_passward");
                  String security_code=request.getParameter("txt_security_code");
                  
              if(request.getParameter("btn_Save")!=null)
@@ -42,7 +42,7 @@
             {
                 
                 st=cn.createStatement();
-                String sql="insert into employee_registration (employee,batch_id,employee_name,contact_no,joining_date,address,age,gender,password,security_code,email) values('"+employee+"','"+batch_id+"','"+employee_name+"','"+contact_no+"','"+joining_date+"','"+address+"','"+age+"','"+gender+"','"+password+"','"+security_code+"','"+email+"')";
+                String sql="insert into employee_registration (employee,batch_id,employee_name,contact_no,joining_date,address,age,gender,passward,security_code,email) values('"+employee+"','"+batch_id+"','"+employee_name+"','"+contact_no+"','"+joining_date+"','"+address+"','"+age+"','"+gender+"','"+passward+"','"+security_code+"','"+email+"')";
                 st.execute(sql);
                 
                 %><script language="javascript">alert("Record Saved Successfully"); </script><% 
