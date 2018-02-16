@@ -27,7 +27,10 @@
                         if(rs.next())
                         {
                             int id = rs.getInt("dr_id");
-                            response.sendRedirect("Track.jsp?e_id="+id);
+                            %><script language="javascript"> alert("Redirecting id <%=id%> to Track.jsp"); </script><%
+                            %><script language="javascript"> window.location = "Track.jsp?e_id=<%=id%>" </script><%
+                            
+                            //response.sendRedirect("Track.jsp?e_id="+id);
                         }else
                         {
                         %><script language="javascript">alert("Records Not Found"); </script><%
