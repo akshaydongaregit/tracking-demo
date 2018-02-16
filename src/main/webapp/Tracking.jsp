@@ -28,10 +28,9 @@
                         {
                             int id = rs.getInt("dr_id");
                             response.sendRedirect("Track.jsp?e_id="+id);
-                            
                         }else
                         {
-                        %><script language="javascript">alert("<%=rs%>"+" Records Not Found"); </script><%
+                        %><script language="javascript">alert("Records Not Found"); </script><%
                         }
                     }       
                     catch(Exception e)
