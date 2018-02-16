@@ -6,12 +6,12 @@ if(action!=null && action.equalsIgnoreCase("validate"))
 try
             {
                 st=cn.createStatement();
-                String sql="select * from registration where email_id='"+request.getParameter("name")+"' and passward='"+request.getParameter("pwd")+"'";
+                String sql="select * from employee_registration where email='"+request.getParameter("name")+"' and passward='"+request.getParameter("pwd")+"'";
                 ResultSet rs = st.executeQuery(sql);
                 if(rs.next())
                 {
-                int id=rs.getInt("r_id");
-                String name=rs.getString("full_name");
+                int id=rs.getInt("dr_id");
+                String name=rs.getString("employee_name");
                 
                 sql = "insert into connected(e_id,name) values("+id+",'"+name+"')";
                 st.execute(sql);
