@@ -64,6 +64,11 @@
         <h3> Register New Employee </h3>
       </div>
     </a>  
+    <a href="Tracking.jsp">
+      <div class="panel-link">
+        <h3> Find Bus </h3>
+      </div>
+    </a>
        <a href="Schedule.jsp">
       <div class="panel-link">
         <h3> Schedule </h3>
