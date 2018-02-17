@@ -28,7 +28,7 @@
                         {
                             int id = rs.getInt("dr_id");
                             %><script language="javascript"> alert("Redirecting id <%=id%> to Track.jsp"); </script><%
-                            %><script language="javascript"> window.location = "Track.jsp?e_id=<%=id%>" </script><%
+                             %> <!-- ><script language="javascript"> window.location = "Track.jsp?e_id=<%=id%>" </script> --> <%
                             
                             //response.sendRedirect("Track.jsp?e_id="+id);
                         }else
