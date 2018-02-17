@@ -22,13 +22,14 @@
                      try
                     {
                         st=cn.createStatement();
-                        String sql="select * from employee_registration where Mobile No="+request.getParameter("txt_Mobile No")";
+                        String sql="select * from employee_registration where contact_no="+request.getParameter("txt_Mobile_No");
                         rs = st.executeQuery(sql);
                         if(rs.next())
                         {
                             int id = rs.getInt("dr_id");
+                            rs.close();
                             %><script language="javascript"> alert("Redirecting id <%=id%> to Track.jsp"); </script><%
-                             %> <!-- ><script language="javascript"> window.location = "Track.jsp?e_id=<%=id%>" </script> --> <%
+                             %> <script language="javascript"> window.location = "Track.jsp?e_id=<%=id%>" </script> <%
                             
                             //response.sendRedirect("Track.jsp?e_id="+id);
                         }else
@@ -53,7 +54,7 @@
           <div class="row">
                 <div class="col-sm-4"></div>
                 <div class="col-sm-4">
-                    <input type="text" name="txt_Mobile No" placeholder="Mobile No" class="form-control" onkeypress="javascript:return isNumber(event)" maxlength="10">
+                    <input type="text" name="txt_Mobile_No" placeholder="Mobile No" class="form-control" onkeypress="javascript:return isNumber(event)" maxlength="10">
                 </div>
                 <div class="col-sm-4"></div>
             </div>
