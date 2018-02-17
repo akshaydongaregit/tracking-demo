@@ -9,7 +9,7 @@
         <link rel="styleshet" type="text/css" href="bootstrap.css">
     </head>
     <body>
-        <form name="Track" action="Track.jsp" method="GET">
+        <form name="Tracking" action="Tracking.jsp" method="GET">
         <%@include file="Adminmaster.html" %>
         <%@include file="database.jsp"%>
         <%@page import="java.sql.Statement"%>
