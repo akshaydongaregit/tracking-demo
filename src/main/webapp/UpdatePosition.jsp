@@ -54,7 +54,7 @@
             
             try
             {
-                java.text.SimpleDateFormat dformat=new SimpleDateFormat("YYYY-MM-DD hh:mm:ss.SS");
+                java.text.SimpleDateFormat dformat=new SimpleDateFormat("YYYY-MM-DD HH:MM:SS.SS");
                 String sdate=dformat.format(new java.util.Date());
   
                 st=cn.createStatement();
