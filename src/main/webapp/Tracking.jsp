@@ -22,7 +22,7 @@
                      try
                     {
                         st=cn.createStatement();
-                        String sql="select * from employee_registration where contact_no="+request.getParameter("txt_contact_no");
+                        String sql="select * from employee_registration where Mobile No="+request.getParameter("txt_Mobile No");
                         rs = st.executeQuery(sql);
                         if(rs.next())
                         {
