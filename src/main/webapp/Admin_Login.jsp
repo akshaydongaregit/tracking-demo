@@ -12,6 +12,11 @@
         <%@include file="database.jsp"%>
         <%
         if(request.getParameter("btn_SignIn")!=null)
+        {
+            response.sendRedirect("Admin_Signup.jsp");
+        }
+        
+        if(request.getParameter("btn_LogIn")!=null)
         try
             {
             
@@ -63,8 +68,7 @@
               <br>
                <div class="well" style="opacity: 0.5; width: 50%; margin-left: 300px;background-color: highlight;">
                         <center>
-                        <input type="submit" name="btn_LogIn" class="btn btn-primary" value="LogIn">
-                       
+                        <input type="submit" name="btn_LogIn" class="btn btn-primary" value="LogIn">               
                         <input type="submit" name="btn_SignIn" style="margin-left:50px;" value="SignIn" class="btn btn-primary">
                         </center>
                     </div>
