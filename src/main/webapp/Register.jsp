@@ -15,7 +15,7 @@
     <body>
         <%@include file="database.jsp" %>  
         <form name="Register" action="Register.jsp" method="GET">
-         <%@include file="Adminmaster.html" %>    
+         <%@include file="Adminmaster.html"%>    
        
         <%@page import="java.sql.Statement"%>
         <%@page import="java.sql.DriverManager"%>
