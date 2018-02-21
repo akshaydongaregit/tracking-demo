@@ -195,7 +195,7 @@
                     <div class="row">
                     <div class="col-sm-4"></div>
                     <div class="col-sm-4"> 
-                    <input type="password" placeholder="Password" name="txt_passward" class="form-control">
+                    <input type="password" placeholder="Password" name="txt_passward" class="form-control" minlength="8" maxlength="14">
                     </div>
                     <div class="col-sm-4"></div>
                     </div>
@@ -203,7 +203,7 @@
                     <div class="row">
                     <div class="col-sm-4"></div>
                     <div class="col-sm-4"> 
-                    <input type="password" placeholder="Security Code" name="txt_security_code" class="form-control">
+                    <input type="password" placeholder="Security Code" name="txt_security_code" class="form-control" minlength="8" maxlength="14">
                     </div>   
                     <div class="col-sm-4"> </div>
                     </div>
