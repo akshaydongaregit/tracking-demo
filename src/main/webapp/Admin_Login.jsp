@@ -8,7 +8,7 @@
         <link rel="stylesheet" type="text/css" href="bootstrap.css">
     </head>
     <body>
-        <%@include file="Adminmaster.jsp"%>
+        <%@include file="Adminmaster.html"%>
         <%@include file="database.jsp"%>
         <%
         if(request.getParameter("btn_SignIn")!=null)
