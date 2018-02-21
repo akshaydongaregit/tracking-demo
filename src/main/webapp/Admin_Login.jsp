@@ -45,6 +45,7 @@
                 System.out.print("ERROR ");
             }  
         %>
+        <form name="loginForm">
           <div class="container">
             <div class="well" style="padding-top: 5px;padding-bottom: 5px;background-color: #f0ad4e">
                 <h1><center> Login </center></h1>
@@ -73,5 +74,6 @@
                         </center>
                     </div>
               </div>
+            </form>
     </body>
 </html>
