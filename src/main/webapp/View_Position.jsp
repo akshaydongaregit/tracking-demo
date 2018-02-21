@@ -33,11 +33,12 @@
         </style>
     </head>
     <body>
+        <%@include file="Adminmaster.html" %>
         <h1>Connected Employees</h1>
         <%@page import="java.util.*"%>
         <%@page import="java.io.*"%>
         <%@include file="database.jsp" %>
-        <%@include file="Adminmaster.html" %>  
+         
         <%
             try
             {
