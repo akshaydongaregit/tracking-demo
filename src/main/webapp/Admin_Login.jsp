@@ -10,7 +10,36 @@
     <body>
         <%@include file="Adminmaster.jsp"%>
         <%@include file="database.jsp"%>
-        
+        <%
+        if(request.getParameter("btn_SignIn")!=null)
+        try
+            {
+            
+                st=cn.createStatement();
+                String sql="select * from signup where username='"+request.getParameter("User_Name")+"' and password='"+request.getParameter("Password")+"'";
+                ResultSet rs = st.executeQuery(sql);
+                if(rs.next())
+                {
+                int id=rs.getInt("id");
+                String session_id = session.getId();
+                sql = "insert into adminCon(id,session_id) values("+id+",'"+session_id+"')";
+                st.execute(sql);
+                
+                System.out.print("Login OK ");
+                System.out.print(id+" ");
+                System.out.print(session_id+" ");
+                response.sendRedirect("index.jsp");
+                }else
+                {
+                System.out.print("NOK ");
+                }
+                
+            }catch(Exception e)
+            {
+                System.out.print("error :"+e);
+                System.out.print("ERROR ");
+            }  
+        %>
           <div class="container">
             <div class="well" style="padding-top: 5px;padding-bottom: 5px;background-color: #f0ad4e">
                 <h1><center> Login </center></h1>
