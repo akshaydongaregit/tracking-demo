@@ -47,6 +47,7 @@
         </style>
     </head>
   <body>
+    <%@include file="Authenticate.jsp"%>
     <div class="title">
     <h2>Bus Tracking Using Driver Mobile GPS Tracking</h2>
     </div>
