@@ -8,7 +8,7 @@
         <link rel="stylesheet" type="text/css" href="bootstrap.css">
     </head>
     <body>
-        <form name="Admin_Signup" action="Admin_Signup" method="GET">
+        <form name="Admin_Signup" action="Admin_Signup.jsp" method="GET">
           
         <%@page import="java.sql.Statement"%>
         <%@page import="java.sql.DriverManager"%>
