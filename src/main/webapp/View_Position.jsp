@@ -34,7 +34,12 @@
     </head>
     <body>
         <%@include file="Adminmaster.html" %>
-        <h1>Connected Employees</h1>
+        <div class="container">
+            <div class="well" style="padding-top: 5px;padding-bottom: 5px;background-color: #f0ad4e">
+                <h1><center>Connected Employees</center></h1>
+            </div>
+            </div>
+ 
         <%@page import="java.util.*"%>
         <%@page import="java.io.*"%>
         <%@include file="database.jsp" %>
