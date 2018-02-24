@@ -11,7 +11,6 @@
     <body>
         <form name="Tracking" action="Tracking.jsp" method="GET">
         <%@include file="Adminmaster.html" %>
-        <%@include file="database.jsp"%>
         <%@page import="java.sql.Statement"%>
         <%@page import="java.sql.ResultSet"%>
         <%@page import="java.sql.Connection"%>
