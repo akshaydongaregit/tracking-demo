@@ -42,8 +42,7 @@
  
         <%@page import="java.util.*"%>
         <%@page import="java.io.*"%>
-        <%@include file="database.jsp" %>
-         
+       
         <%
             try
             {
