@@ -34,6 +34,7 @@
     </head>
     <body>
         <%@include file="Adminmaster.html" %>
+        <%@include file="Authenticate.jsp" %>
         <div class="container">
             <div class="well" style="padding-top: 5px;padding-bottom: 5px;background-color: #f0ad4e">
                 <h1><center>Connected Employees</center></h1>
