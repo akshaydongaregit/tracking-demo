@@ -16,6 +16,7 @@
     <body>
         <form name="Schedule" action="Schedule.jsp" method="GET">
         <%@include file="Adminmaster.html" %>
+        <%@include file="Authenticate.jsp" %>   
         
          <%@page import="java.sql.Statement"%>
         <%@page import="java.sql.DriverManager"%>
