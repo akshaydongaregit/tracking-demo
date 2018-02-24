@@ -8,6 +8,7 @@
         <link rel="stylesheet" type="text/css" href="bootstrap.css">
     </head>
     <body>
+        <%@include file="Adminmaster.jsp"%>
         <form name="Admin_Signup" action="Admin_Signup.jsp" method="GET">
           
         <%@page import="java.sql.Statement"%>
