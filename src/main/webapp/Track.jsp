@@ -27,7 +27,6 @@
   </head>
   <body>
       <%@include file="Authenticate.jsp"%>
-      <%@include file="database.jsp"  %>
       
         <%
         String lat=request.getParameter("latt");
