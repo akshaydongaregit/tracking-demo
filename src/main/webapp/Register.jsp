@@ -13,7 +13,6 @@
         <link rel="stylesheet" type="text/css" href="bootstrap.css">
     </head>
     <body>
-        <%@include file="database.jsp" %>  
         <form name="Register" action="Register.jsp" method="GET">
          <%@include file="Adminmaster.html"%>    
        
