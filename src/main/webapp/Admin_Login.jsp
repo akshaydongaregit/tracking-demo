@@ -8,9 +8,8 @@
         <link rel="stylesheet" type="text/css" href="bootstrap.css">
     </head>
     <body>
-        <% session.setAttribute("NO_LOGOUT","YES"); %>
-        <%@include file="Adminmaster.html"%>
-        <% session.removeAttribute("NO_LOGOUT"); %>
+        
+        <%@include file="database.jsp"%>
         
         <%
         if(request.getParameter("btn_SignIn")!=null)
