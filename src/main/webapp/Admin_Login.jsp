@@ -9,7 +9,9 @@
     </head>
     <body>
         
+        <% session.setAttribute("NO_LOGOUT","YES"); %>
         <%@include file="Adminmaster.html"%>
+        <% session.removeAttribute("NO_LOGOUT"); %>
         <%@include file="database.jsp"%>
         
         <%
