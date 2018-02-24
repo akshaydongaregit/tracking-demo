@@ -26,6 +26,7 @@
     </style>
   </head>
   <body>
+      <%@include file="Authenticate.jsp"%>
       <%@include file="database.jsp"  %>
       
         <%
