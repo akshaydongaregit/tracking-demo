@@ -9,6 +9,7 @@
     </head>
     <body>
         <%@include file="Adminmaster.html"%>
+        <%@include file="database.jsp"%>
         <form name="Admin_Signup" action="Admin_Signup.jsp" method="GET">
           
         <%@page import="java.sql.Statement"%>
