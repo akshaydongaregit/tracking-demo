@@ -10,6 +10,9 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <link rel="stylesheet" type="text/css" href="bootstrap.css">
+        <style>
+            
+            </style>
     </head>
     <body style="background-image: url(b2.jpg)">
         
@@ -34,13 +37,13 @@ and open the template in the editor.
             
         </div>
         <div class="well" style="background-color: black">
-            <ul>
+            <ul class="nav nav-pills">
                 <li><a href="index.jsp" style="color:white; font-size:200%;">Home</a></li>
-            </ul>
+           
             <% if(session.getAttribute("NO_LOGOUT")==null)
                {%>
-            <ul>
-                <li><a href="Admin_Logout.jsp" style="color:white; font-size:200%;">Logout</a></li>
+            
+                <li><a href="Admin_Logout.jsp" style="color:white; font-size:200%; list-style: none;">Logout</a></li>
             </ul>
                 <%}%>
         </div>
