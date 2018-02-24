@@ -9,7 +9,7 @@
     </head>
     <body>
         <%@include file="Adminmaster.html"%>
-        <%@include file="database.jsp"%>
+        
         <%
         if(request.getParameter("btn_SignIn")!=null)
         {
