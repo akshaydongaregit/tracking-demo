@@ -54,7 +54,7 @@
     <div class="title">
     <h2>Bus Tracking Using Driver Mobile GPS Tracking</h2>
       <ul class="nav nav-pills">
-      <a href="Admin_Logout.jsp" class="logout-link" > Logout </a>
+     <li><a href="Admin_Logout.jsp" class="logout-link" style="color:white; font-size:200%; list-style: none;">Logout</a></li>
       </ul>
     </div>
     <!-- https://www.goodnet.org/photos/620x0/27785_hd.png
