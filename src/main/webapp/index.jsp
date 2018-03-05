@@ -53,7 +53,9 @@
     <%@include file="Authenticate.jsp"%>
     <div class="title">
     <h2>Bus Tracking Using Driver Mobile GPS Tracking</h2>
+      <ul class="nav nav-pills">
       <a href="Admin_Logout.jsp" class="logout-link" > Logout </a>
+      </ul>
     </div>
     <!-- https://www.goodnet.org/photos/620x0/27785_hd.png
           https://i1.wp.com/www.findyourwallpaper.com/wp-content/uploads/2013/10/volvo-bus-HD-wallpaper-For-Desktop.jpeg?resize=1024%2C757&ssl=1
