@@ -10,8 +10,8 @@ This application devloped in java used to tarck any android mobile with GPS.
 ## Built With
 
 * Java JSP - Java Web Framework
-* Apachi Tomcat - Server to host Web Applications
-* Openshift - Red-Hat Free Cloud to host your web applications
+* [Apachi Tomcat](http://tomcat.apache.org/) - Server to host Web Applications
+* [Openshift](https://www.openshift.com/) - Red-Hat Free Cloud to host your web applications
 ## Authors
 
 * **Akshay Dongare** - *Initial work* - [akshaydongaregit](https://github.com/akshaydongaregit)
